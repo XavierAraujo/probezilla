@@ -11,7 +11,11 @@
 3. On the bootstrap of the application we should do a validation of a configuration file located in the user home and check wether a valid chatgpt key is available
 4. Each response given by the LLM should ideally be given with a list of relevant original information sources
 5. Add speech to text: the user should be able to answer to the questions vocally
-6. add text to speech
+6. Add text to speech: the LLM questions should be vocalized.
+7. The user should be capable of specifying which AI wants to use and the correspondent settings. Initially only ChatGPT will be supported
+8. The user could specify that he wants the questions to be tailored to a specific company. The LLM should provide a confidence interval indicating how known the company is and whether the adaptation is reliable or not. If not it should state that the questions will be generic and not company specific.
+9. The tool should provide relevant coding exercises or system design questions
+10. We should have some kind of daily classification/history (maybe for a second phase)
 
 # Non Functional Requirements
 
