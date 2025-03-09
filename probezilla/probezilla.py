@@ -16,7 +16,7 @@ def main():
         context_provider.get_default_interview_subjects()
     )
 
-    llm_provider.get_initial_question(initial_context)
+    llm_provider.start_interview(initial_context)
     while True:
         answer = input()
         if answer == "quit":

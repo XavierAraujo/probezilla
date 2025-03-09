@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class LLMProvider(ABC):
     @abstractmethod
-    def get_initial_question(self, context: str) -> str:
+    def start_interview(self, context: str) -> str:
         pass
 
     @abstractmethod
