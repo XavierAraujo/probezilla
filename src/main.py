@@ -4,6 +4,7 @@ from providers.llm_provider_type import LLMProviderType
 from providers.openai_provider import OpenaiProvider
 from context_provider import ContextProvider
 
+
 def main():
     args = configure_parser()
     llm_provider_type = args.llm
@@ -46,11 +47,13 @@ def configure_parser():
 
     return parser.parse_args()
 
+
 def get_chosen_llm_provider(provider: LLMProviderType, apikey: str) -> LLMProvider:
     if provider == LLMProviderType.OPENAI:
         return OpenaiProvider(apikey)
     else:
         raise Exception("Unknown LLM provider")
+
 
 if __name__ == "__main__":
     main()
