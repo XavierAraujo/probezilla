@@ -1,6 +1,7 @@
 from llm_provider import LLMProvider
 from openai import OpenAI
 
+
 class OpenaiProvider(LLMProvider):
 
     _GPT_3_5_TURBO_MODEL = "gpt-3.5-turbo",
