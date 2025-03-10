@@ -1,8 +1,8 @@
 import argparse
-from probezilla.providers.llm_provider import LLMProvider
-from probezilla.providers.llm_provider_type import LLMProviderType
-from probezilla.providers.openai_provider import OpenaiProvider
-from probezilla.context_provider import ContextProvider
+from providers.llm_provider import LLMProvider
+from providers.llm_provider_type import LLMProviderType
+from providers.openai_provider import OpenaiProvider
+from context_provider import ContextProvider
 
 def main():
     args = configure_parser()
