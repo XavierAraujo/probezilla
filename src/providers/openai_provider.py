@@ -9,7 +9,7 @@ class OpenaiProvider(LLMProvider):
 
     def __init__(self, apikey):
         self.apikey = apikey
-        self.client = OpenAI()
+        self.client = OpenAI(api_key=apikey)
         self.conversation = list()
         self.is_interview_started = False
 
