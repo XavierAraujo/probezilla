@@ -4,3 +4,6 @@ The project is configured via [Poetry](https://python-poetry.org/docs/). To set 
 ```
 poetry install
 ```
+
+Currently the project was only validated using Python 3.11.6 so you can use pyenv to set that Python version up.
+Or you can remove this strict dependency from Poetry 'pyproject.toml' configuration file and proceed with the Python version you have set up.
