@@ -9,15 +9,7 @@ Currently the project was only validated using Python 3.11.6 so you can use pyen
 Or you can remove this strict dependency from Poetry 'pyproject.toml' configuration file and proceed with the Python version you have set up.
 
 # Run
-To run the project either enter on Poetry shell and execute the main script
-
+To run the project execute the main script using Poetry:
 ```
-poetry shell
-python probezilla/probezilla.py
-```
-
-or just execute it directly
-
-```
-poetry run python probezilla/probezilla.py
+poetry run python src/main.py
 ```
